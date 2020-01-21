@@ -11,12 +11,14 @@ class Editor extends Component {
   }
 
   render() {
+
     return (
       <div>
         <CodeMirror
           value={this.props.code}
           onChange={this.onCodeChange.bind(this)}
-          options={{ mode: 'jsx', lineNumbers: true, tabSize: 2 }} />
+          options={{ mode: 'jsx', lineNumbers: true, tabSize: 2 }} 
+        />
       </div>
     );
   }

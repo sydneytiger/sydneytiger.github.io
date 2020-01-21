@@ -1,7 +1,7 @@
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
+  font-size: 16px !important;
+  background-color: #ccc !important;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,8 @@ body {
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
   font-family: monospace;
-  height: calc(100vh - 10px);
+  height: calc(70vh);
+  width: calc(100vh - 10px);
   color: black;
 }
 
@@ -39,8 +40,8 @@ body {
 /* GUTTER */
 
 .CodeMirror-gutters {
-  border-right: 1px solid #ddd;
-  background-color: #f7f7f7;
+  border-right: 1px solid blue;
+  background-color: #ccc;
   white-space: nowrap;
 }
 .CodeMirror-linenumbers {}
@@ -48,7 +49,7 @@ body {
   padding: 0 3px 0 5px;
   min-width: 20px;
   text-align: right;
-  color: #999;
+  color: blue;
   white-space: nowrap;
 }
 
@@ -162,7 +163,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
 .CodeMirror {
   position: relative;
   overflow: hidden;
-  background: white;
+  background:#ccc;
 }
 
 .CodeMirror-scroll {
@@ -190,13 +191,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
 }
 .CodeMirror-vscrollbar {
   right: 0; top: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 .CodeMirror-hscrollbar {
   bottom: 0; left: 0;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 .CodeMirror-scrollbar-filler {
   right: 0; bottom: 0;
@@ -405,3 +404,18 @@ cursor: not-allowed;
 Resizer.disabled:hover {
 border-color: transparent;
 }
+
+.label {
+  z-index: 999; 
+  position: absolute; 
+  right: 10px; top: 10px;
+  font-size: 26px;
+}
+
+.padding-left-l { padding-left: 40px; }
+.padding-left-m { padding-left: 30px; }
+.padding-left-s { padding-left: 20px; }
+.padding-left-xs { padding-left: 10px; }
+
+.padding-top-xs { padding-top: 10px; }
+

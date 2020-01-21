@@ -42,16 +42,20 @@ class Viewer extends Component {
   }
 
   render() {
-    const defaultHeight = window.innerHeight / 1.3;
+    const defaultHeight = window.innerHeight * 0.9;
 
     return (
       <SplitPane
-        split="horizontal"
+        split="vertical"
         defaultSize={defaultHeight}
-        className="viewer"
-      >
-        <div className="result">{this.renderExpressions(this.props.code)}</div>
-        <div className="errors">{this.props.errors}</div>
+        className="viewer">
+        <div className="result padding-top-xs padding-left-l">
+          Output
+          {this.renderExpressions(this.props.code)}
+        </div>
+        <div className="errors padding-top-xs padding-left-xs">
+          {this.props.errors}
+        </div>
       </SplitPane>
     );
   }
