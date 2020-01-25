@@ -49,8 +49,8 @@ class Viewer extends Component {
         split="vertical"
         defaultSize={defaultHeight}
         className="viewer">
-        <div className="result padding-top-xs padding-left-l">
-          Output
+        <div className="result padding-top-xs padding-left-l cm-s-default">
+          <span className="cm-header">Output</span>
           {this.renderExpressions(this.props.code)}
         </div>
         <div className="errors padding-top-xs padding-left-xs">
@@ -58,7 +58,7 @@ class Viewer extends Component {
         </div>
       </SplitPane>
     );
-  }
+  }ß
 }
 
 function mapStateToProps(state) {
